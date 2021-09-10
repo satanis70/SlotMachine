@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bakgraund"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bet" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="96dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_bet"
+        app:layout_constraintStart_toStartOf="@+id/imageView_bet"
+        app:layout_constraintTop_toTopOf="@+id/imageView_bet"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_bet"
+        app:layout_constraintEnd_toStartOf="@+id/button_plus"
+        app:layout_constraintStart_toEndOf="@+id/button_minus"
+        app:layout_constraintTop_toTopOf="@+id/button_minus">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_bet"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_bet"
+        app:layout_constraintTop_toTopOf="@+id/imageView_bet"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <ImageView
+        android:id="@+id/imageView_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/spin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="250dp"
+        android:maxHeight="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gold" />
+
+    <TextView
+        android:id="@+id/textView_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingEnd="30dp"
+        android:text="1500"
+        android:maxHeight="250dp"
+        android:textColor="#ffd700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_gold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_gold"
+        app:layout_constraintTop_toTopOf="@+id/imageView_gold" />
+
+    <ImageView
+        android:id="@+id/imageView_ramka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxWidth="400dp"
+        android:maxHeight="230dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_bet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_gold"
+        app:srcCompat="@drawable/ramka" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
