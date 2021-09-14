@@ -148,7 +148,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView_icon2"
+            android:id="@+id/imageView_icon3"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:layout_marginStart="53dp"
@@ -157,10 +157,10 @@
             android:maxWidth="38dp"
             android:maxHeight="50dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView_icon3" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView_icon2" />
 
         <ImageView
-            android:id="@+id/imageView_icon3"
+            android:id="@+id/imageView_icon2"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:layout_marginStart="53dp"
